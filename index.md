@@ -15,7 +15,7 @@ You can assign variables
 You can create functions and conditional statements
 ```
 (fun {toggle_caterpillar_drive caterpillar_drive_status} {
-      if (== True caterpillar_drive_status)
+      if (caterpillar_drive_status)
          {False}
          {True}
 })
@@ -29,7 +29,20 @@ Connery supports dynamic typing...
 (def {this_is_a_string} "Bond. James Bond.")
 (def {this_is_a_number} 007)
 ```
-and type validation
+type validation...
 ```
+(is_num this_is_a_number)
 (print (type_string this_is_a_string))
+```
+string manipulation...
+```
+(def {connery_quote} "There is nothing like a challenge to bring out the best in man.")
+(split connery_quote (find connery_quote " to"))
+```
+and so much more!
+```
+(def {highlanders} (list "Connor MacLeod" "Ramírez" "Rachel Ellenstein" "Methos"))
+(def {highlanders} (join highlanders (list "General Katana")))
+(fun {there_can_only_be_one highlander} {== "Connor MacLeod" highlander})
+(fun {find_highlander_to_mentor list} {filter there_can_only_be_one list})
 ```
