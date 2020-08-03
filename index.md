@@ -6,13 +6,30 @@
 
 <p align="center">Connery is a experimental lisp-like interpreted programming language that is somewhat themed after veteran actor Sean Connery.</p>
 
-## Connery has a few of the features you have come to expect from a programming language
+## Connery has several of the features you have come to expect from a programming language
 
+You can assign variables
 ```
-;You can make comments, and assign variables
-(def {aston_martin_db5} "James Bond")
-
-;You can complete mathematical operations using Polish notation
-(def {sean_connery_age} (- 90 1))
+(def {james_bonds_car} "Aston Martin DB5")
 ```
-
+You can create functions and conditional statements
+```
+(fun {toggle_caterpillar_drive caterpillar_drive_status} {
+      if (== True caterpillar_drive_status)
+         {False}
+         {True}
+})
+```
+You can complete mathematical operations using Polish notation
+```
+(- 90 1)
+```
+Connery supports dynamic typing...
+```
+(def {this_is_a_string} "Bond. James Bond.")
+(def {this_is_a_number} 007)
+```
+and type validation
+```
+(print (type_string this_is_a_string))
+```
