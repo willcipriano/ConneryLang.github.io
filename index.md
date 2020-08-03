@@ -1,13 +1,10 @@
 # Introduction
-
 <p align="center">
   <img width="368" height="414.5" src="/img/ConneryLogo.jpg">
 </p>
-
 <p align="center">Connery is a experimental lisp-like interpreted programming language that is somewhat themed after veteran actor Sean Connery.</p>
 
 ## Connery has several of the features you have come to expect from a programming language
-
 You can assign variables
 ```
 (def {james_bonds_car} "Aston Martin DB5")
@@ -45,4 +42,9 @@ and so much more!
 (def {highlanders} (join highlanders (list "General Katana")))
 (fun {there_can_only_be_one highlander} {== "Connor MacLeod" highlander})
 (fun {find_highlander_to_mentor list} {filter there_can_only_be_one list})
+```
+## How is this Sean Connery themed?
+When you make a mistake, Connery lets you know with a signature scottish lisp!
+```
+shtirred: filter requiresh a function and a lisht ash input!
 ```
