@@ -54,7 +54,7 @@ and so much more!
 ```
 (def {highlanders} (list "Connor MacLeod" "Ramírez" "Rachel Ellenstein" "Methos"))
 (def {highlanders} (join highlanders (list "General Katana")))
-(fun {there_can_only_be_one highlander} {!= -1 (caseless_find highlander "MacLeod")})
+(fun {there_can_only_be_one highlander} {!= -1 (caseless_find highlander "MACLEOD")})
 (fun {pick_highlander_to_mentor list} {eval (filter there_can_only_be_one list)})
 (pick_highlander_to_mentor highlanders)
 ```
