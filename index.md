@@ -8,6 +8,10 @@
 You can assign variables
 ```
 (def {james_bonds_car} "Aston Martin DB5")
+(print james_bonds_car)
+```
+```
+"Aston Martin DB5"
 ```
 You can create functions and conditional statements
 ```
@@ -21,6 +25,9 @@ You can complete mathematical operations using Polish notation
 ```
 (- 90 1)
 ```
+```
+89
+```
 Connery supports dynamic typing...
 ```
 (def {this_is_a_string} "Bond. James Bond.")
@@ -31,17 +38,28 @@ type validation...
 (is_num this_is_a_number)
 (print (type_string this_is_a_string))
 ```
+```
+True
+String
+```
 string manipulation...
 ```
 (def {connery_quote} "There is nothing like a challenge to bring out the best in man.")
 (split connery_quote (find connery_quote " to"))
 ```
+```
+{"There is nothing like a challenge" " to bring out the best in man."}
+```
 and so much more!
 ```
 (def {highlanders} (list "Connor MacLeod" "Ramírez" "Rachel Ellenstein" "Methos"))
 (def {highlanders} (join highlanders (list "General Katana")))
-(fun {there_can_only_be_one highlander} {== "Connor MacLeod" highlander})
-(fun {find_highlander_to_mentor list} {filter there_can_only_be_one list})
+(fun {there_can_only_be_one highlander} {!= -1 (caseless_find highlander "MacLeod")})
+(fun {pick_highlander_to_mentor list} {eval (filter there_can_only_be_one list)})
+(pick_highlander_to_mentor highlanders)
+```
+```
+"Connor MacLeod"
 ```
 ## How is this Sean Connery themed?
 When you make a mistake, Connery lets you know with a signature scottish lisp!
