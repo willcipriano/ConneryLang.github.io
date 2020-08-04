@@ -35,11 +35,9 @@ Connery supports dynamic typing...
 ```
 type validation...
 ```
-(is_num this_is_a_number)
 (print (type_string this_is_a_string))
 ```
 ```
-True
 String
 ```
 string manipulation...
