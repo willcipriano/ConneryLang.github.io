@@ -1,4 +1,4 @@
-# Standard Library
+# Syntax / Standard Library
 
 ## Syntax
 Connery is based on [Lispy](http://www.buildyourownlisp.com/) and like Lispy has two primary statement types, S-Expressions and Q-Expressions.
