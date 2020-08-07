@@ -33,7 +33,8 @@ Hello, World!
 
 ## Essentials
 
-**def** _(or =)_ - Variable assignment, define a variable in the current scope.
+### def _(or =)_
+Variable assignment, define a variable in the current scope.
 ```
 ; Strings
 def {VARIABLE_NAME} "example string"
@@ -43,12 +44,14 @@ def {VARIABLE_NAME} 32
 = {VARIABLE_NAME} "another string"
 ```
 
-**fun** - Allows function definition in the current scope.
+### fun
+Allows function definition in the current scope.
 ```
 fun {FUNCTION_NAME} {FUNCTION_BODY}
 ```
-
-**if** - Conditional statement, if the first expression evaluates to True _(1)_ than the first statement will be evaluated otherwise the second statement is.
+### if
+Conditional statement, if the first expression evaluates to True _(1)_ than the first statement will be evaluated otherwise the second statement is.
 ```
 (if (True) {print "This always happens} {print "This never happens"})
 ```
+
