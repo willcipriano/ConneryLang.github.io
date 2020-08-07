@@ -7,6 +7,7 @@ Connery contains a number of constant values for the sake of convenience and to 
 | True                       | 1                     | Conditional statements                   |
 | False                      | 0                     | Conditional statements                   |
 | None                       | Empty Q-Expression    | Comparison / returning nothing           |
+| Empty                      | Empty String          | Comparison / returning nothing           |
 | Otherwise                  | True                  | Case statements                          |
 | std_lib_main_location      | "stdlib/main.connery" | Reloading the standard library           |
 
