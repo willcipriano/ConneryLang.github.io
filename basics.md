@@ -2,7 +2,8 @@
 
 ### def _(or =)_
 Builtin 
-{: .label .label-purple } Variable assignment, define a variable in the current scope.
+{: .label .label-purple }
+Variable assignment, define a variable in the current scope.
 ```
 ; Strings
 def {VARIABLE_NAME} "example string"
@@ -20,7 +21,6 @@ fun {FUNCTION_NAME} {FUNCTION_BODY}
 ### if
 Builtin 
 {: .label .label-purple }
-
 Conditional statement, if the first expression evaluates to True _(1)_ than the first statement will be evaluated otherwise the second statement is.
 ```
 (if (True) 
