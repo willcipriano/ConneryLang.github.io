@@ -17,7 +17,7 @@ Allows function definition in the current scope.
 fun {FUNCTION_NAME} {FUNCTION_BODY}
 ```
 ### if
-Conditional statement, if the first expression evaluates to True _(1)_ than the first statement will be evaluated otherwise the second statement is.
+Builtin {: .label .label-purple } Conditional statement, if the first expression evaluates to True _(1)_ than the first statement will be evaluated otherwise the second statement is.
 ```
 (if (True) 
     {print "This always happens"} 
