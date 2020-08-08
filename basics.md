@@ -14,6 +14,8 @@ def {VARIABLE_NAME} 32
 ```
 
 ### fun
+StdLib
+{: .label .label-green }
 Allows function definition in the current scope.
 ```
 fun {FUNCTION_NAME} {FUNCTION_BODY}
@@ -32,6 +34,8 @@ This always happens
 ```
 
 ### tail
+Builtin 
+{: .label .label-purple }
 Remove first item/digit/character from a list/number/string and return the result. _(Note: When used on numbers if the result would begin with zero, the leading zeros will be omitted.)_
 ```
 (tail "Walther PPK")
@@ -47,6 +51,8 @@ Remove first item/digit/character from a list/number/string and return the resul
 ```
 
 ### head
+Builtin 
+{: .label .label-purple }
 Similar to tail, operates on a list/number/string and instead returns the first item/digit/character
 ```
 (head "Walther PPK")
@@ -60,6 +66,8 @@ Similar to tail, operates on a list/number/string and instead returns the first 
 ```
 
 ### join
+Builtin 
+{: .label .label-purple }
 join combines two or more lists or strings into a single list or string.
 ```
 (join (list "item1" "item2") (list "item3" "item4"))
@@ -71,6 +79,8 @@ join combines two or more lists or strings into a single list or string.
 ```
 
 ### list
+Builtin 
+{: .label .label-purple }
 list creates a list from all the consequent items provided to it.
 ```
 (list "item 1" "item 2" 3)
@@ -80,6 +90,8 @@ list creates a list from all the consequent items provided to it.
 ```
 
 ### type
+Builtin 
+{: .label .label-purple }
 type returns a number that corresponds with the type of the item passed to it. See [type_num](http://connerylang.org/constants.html#type_num) for translations or use _type_string_ to get a string instead.
 ```
 (type "example")
@@ -90,7 +102,9 @@ type returns a number that corresponds with the type of the item passed to it. S
 "String"
 ```
 
-### \ _(lambda)_ 
+### \ _(lambda)_
+Builtin 
+{: .label .label-purple }
 Lambda allows the creation of [anonymous functions](https://en.wikipedia.org/wiki/Anonymous_function), useful when paired with functions like filter.
 ```
 (\ {STRING} {print STRING})
