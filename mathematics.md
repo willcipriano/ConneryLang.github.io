@@ -82,4 +82,6 @@ Equality checking can be completed in the same manner as other mathematical oper
 (< 2 1)
 ; Equal to or less than
 (<= 1 2)
+; Not equal
+(!= 1 2)
 ```
