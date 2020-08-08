@@ -19,7 +19,12 @@ fun {FUNCTION_NAME} {FUNCTION_BODY}
 ### if
 Conditional statement, if the first expression evaluates to True _(1)_ than the first statement will be evaluated otherwise the second statement is.
 ```
-(if (True) {print "This always happens} {print "This never happens"})
+(if (True) 
+    {print "This always happens"} 
+    {print "This never happens"})
+```
+```
+This always happens
 ```
 
 ### tail
@@ -80,8 +85,6 @@ type returns a number that corresponds with the type of the item passed to it. S
 1
 "String"
 ```
-
-
 
 ### \ _(lambda)_ 
 Lambda allows the creation of [anonymous functions](https://en.wikipedia.org/wiki/Anonymous_function), useful when paired with functions like filter.

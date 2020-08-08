@@ -36,7 +36,7 @@ pow returns the power of a number for a given exponent.
 ```
 
 ### is_even
-is_even returns True (1) if the number is even, and False (0) if the number is odd.
+is_even returns True _(1)_ if the number is even, and False _(0)_ if the number is odd.
 ```
 (is_even 2)
 ```
@@ -45,7 +45,7 @@ is_even returns True (1) if the number is even, and False (0) if the number is o
 ```
 
 ### is_odd
-is_odd returns False (0) if the number is even, and True (0) if the number is odd.
+is_odd returns False _(0)_ if the number is even, and True _(1)_ if the number is odd.
 ```
 (is_odd 2)
 ```
@@ -70,7 +70,7 @@ rand returns a random number between the two numbers provided inclusive.
 
 ## Equality checking
 
-Equality checking can be completed in the same manner as other mathematical operations, as well as greater than or less than. If the statement is true it returns True otherwise it returns False.
+Equality checking can be completed in the same manner as other mathematical operations, as well as greater than or less than. If the statement is true it returns True _(1)_ otherwise it returns False _(0)_.
 ```
 ; Equal to
 (= 1 1)
