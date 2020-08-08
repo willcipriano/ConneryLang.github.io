@@ -11,7 +11,7 @@ You can assign variables
 (print james_bonds_car)
 ```
 ```
-"Aston Martin DB5"
+Aston Martin DB5
 ```
 You can create functions and conditional statements
 ```
