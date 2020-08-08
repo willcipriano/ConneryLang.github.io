@@ -1,9 +1,8 @@
 # Basic Functions
 
 ### def _(or =)_
-Builtin {: .label .label-purple }
-
-Variable assignment, define a variable in the current scope.
+Builtin 
+{: .label .label-purple } Variable assignment, define a variable in the current scope.
 ```
 ; Strings
 def {VARIABLE_NAME} "example string"
