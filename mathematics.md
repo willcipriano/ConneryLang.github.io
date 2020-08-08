@@ -2,7 +2,7 @@
 
 ## Mathematical Operations
 
-Connery is a functional programming language as such mathematical operations are no different from regular functions and are used in a style similar to [polish notation](https://en.wikipedia.org/wiki/Polish_notation). 
+Connery is a [functional programming](https://en.wikipedia.org/wiki/Functional_programming) language as such mathematical operations are no different from regular functions and are used in a style similar to [polish notation](https://en.wikipedia.org/wiki/Polish_notation). 
 ```
 ; Addition
 (+ 1 1)
@@ -33,6 +33,39 @@ pow returns the power of a number for a given exponent.
 ```
 ```
 1024
+```
+
+### is_even
+is_even returns True (1) if the number is even, and False (0) if the number is odd.
+```
+(is_even 2)
+```
+```
+1
+```
+
+### is_odd
+is_odd returns False (0) if the number is even, and True (0) if the number is odd.
+```
+(is_odd 2)
+```
+```
+0
+```
+
+### rand
+rand returns a random number between the two numbers provided inclusive.
+```
+(rand 1 10)
+(rand 1 10)
+(rand 1 10)
+(rand 1 10)
+```
+```
+4
+3
+10
+1
 ```
 
 ## Equality checking
