@@ -4,7 +4,6 @@
 
 Builtin
 {: .label .label-purple }
-
 Variable assignment, define a variable in the current scope.
 ```
 ; Strings
