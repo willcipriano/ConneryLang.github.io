@@ -1,7 +1,8 @@
 # Mathematics
 
 ## Mathematical Operations
-
+Builtin 
+{: .label .label-purple }
 Connery is a [functional programming](https://en.wikipedia.org/wiki/Functional_programming) language as such mathematical operations are no different from regular functions and are used in a style similar to [polish notation](https://en.wikipedia.org/wiki/Polish_notation). 
 ```
 ; Addition
@@ -15,6 +16,8 @@ Connery is a [functional programming](https://en.wikipedia.org/wiki/Functional_p
 ```
 
 ### mod
+Builtin 
+{: .label .label-purple }
 mod returns the result of integer division between two numbers. Useful for [job interview tests](https://en.wikipedia.org/wiki/Fizz_buzz).
 ```
 (fun {fizzbuzz number} {
@@ -27,6 +30,8 @@ mod returns the result of integer division between two numbers. Useful for [job 
 ```
 
 ### pow
+Builtin 
+{: .label .label-purple }
 pow returns the power of a number for a given exponent.
 ```
 (pow 2 10)
@@ -36,6 +41,8 @@ pow returns the power of a number for a given exponent.
 ```
 
 ### is_even
+StdLib
+{: .label .label-green }
 is_even returns True _(1)_ if the number is even, and False _(0)_ if the number is odd.
 ```
 (is_even 2)
@@ -45,6 +52,8 @@ is_even returns True _(1)_ if the number is even, and False _(0)_ if the number 
 ```
 
 ### is_odd
+StdLib
+{: .label .label-green }
 is_odd returns False _(0)_ if the number is even, and True _(1)_ if the number is odd.
 ```
 (is_odd 2)
@@ -52,8 +61,9 @@ is_odd returns False _(0)_ if the number is even, and True _(1)_ if the number i
 ```
 0
 ```
-
 ### rand
+Builtin 
+{: .label .label-purple }
 rand returns a random number between the two numbers provided inclusive.
 ```
 (rand 1 10)
@@ -69,7 +79,8 @@ rand returns a random number between the two numbers provided inclusive.
 ```
 
 ## Equality checking
-
+Builtin 
+{: .label .label-purple }
 Equality checking can be completed in the same manner as other mathematical operations, as well as greater than or less than. If the statement is true it returns True _(1)_ otherwise it returns False _(0)_.
 ```
 ; Equal to
