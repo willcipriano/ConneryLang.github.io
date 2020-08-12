@@ -110,4 +110,17 @@ Lambda allows the creation of [anonymous functions](https://en.wikipedia.org/wik
 (\ {STRING} {print STRING})
 ```
 
-
+### length
+Builtin 
+{: .label .label-purple }
+length returns the number of characters in a string, the number of digits in a number, or the number of elements in a list depending on what is passed into it.
+```
+(length "Bond")
+(length 1234)
+(length (list 1 2 3 4))
+```
+```
+4
+4
+4
+```
