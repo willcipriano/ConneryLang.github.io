@@ -94,3 +94,13 @@ rand_string returns a random string for a given length
 "^-B*AYghRNzQ+g9"
 ```
 
+### delimit
+StdLib
+{: .label .label-green }
+delimit takes a string, splits it at a particular character and returns a list. 
+```
+delimit "," "a,b,c,d,e,f,g"
+```
+```
+{"a" "b" "c" "d" "e" "f" "g"}
+```
