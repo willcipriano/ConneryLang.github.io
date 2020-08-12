@@ -79,3 +79,18 @@ chop "Got lost in his own museum huh?" 8
 "Got lost"
 ```
 
+### rand_string 
+StdLib
+{: .label .label-green }
+rand_string returns a random string for a given length
+```
+(rand_string 10)
+(rand_string 10)
+(rand_string 15)
+```
+```
+"7IPdDBk&vT"
+"6V6^Nk#+yC"
+"^-B*AYghRNzQ+g9"
+```
+
