@@ -47,6 +47,8 @@ find returns an index for a particular string if it exists within a given string
 ```
 
 ### caseless_find
+StdLib
+{: .label .label-green }
 caseless_find works just like find, but it ignores case.
 ```
 caseless_find "ABCD" "bcd"
