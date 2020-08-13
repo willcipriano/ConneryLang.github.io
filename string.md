@@ -19,7 +19,7 @@ lower converts any upper case characters to lower case.
 lower "THIS IS UPPER CASE"
 ```
 ```
-"this is lower case"
+"this is upper case"
 ```
 
 ### replace
