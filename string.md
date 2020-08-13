@@ -104,3 +104,14 @@ delimit "," "a,b,c,d,e,f,g"
 ```
 {"a" "b" "c" "d" "e" "f" "g"}
 ```
+
+### relimit
+StdLib
+{: .label .label-green }
+relimit takes a list of strings and places a delimiter between them, returning a single string.
+```
+relimit "," (list "a" "b" "c")
+```
+```
+"a,b,c"
+```
