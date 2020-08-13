@@ -115,3 +115,25 @@ relimit "," (list "a" "b" "c")
 ```
 "a,b,c"
 ```
+
+### string_to_index_list
+StdLib
+{: .label .label-green }
+string_to_index_list takes a string as input and returns a list of numbers that correspond to each character.
+```
+string_to_index_list "Bond, James Bond"
+```
+```
+{27 14 13 3 77 76 35 0 12 4 18 76 27 14 13 3}
+```
+
+### index_list_to_string
+StdLib
+{: .label .label-green }
+index_list_to_string does the opposite of string_to_index_list and converts a list of numbers back into a string.
+```
+index_list_to_string (list 27 14 13 3 77 76 35 0 12 4 18 76 27 14 13 3)
+```
+```
+"Bond, James Bond"
+```
