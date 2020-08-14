@@ -137,3 +137,37 @@ index_list_to_string (list 27 14 13 3 77 76 35 0 12 4 18 76 27 14 13 3)
 ```
 "Bond, James Bond"
 ```
+
+### string_rep
+StdLib
+{: .label .label-green }
+string_rep takes a string as input and returns a list with two numbers that can be used later to see if it matches another string. Useful when you want to minimize memory use or do many comparisons of long strings rapidly. _Note: This method is prone to false positives._
+```
+string_rep "Sean Connery"
+```
+```
+{12 250}
+```
+
+### string_rep_compare
+StdLib
+{: .label .label-green }
+string_rep_compare takes two string reps and compares them. Returns True _(1)_ if they might match and False _(0)_ if they don't match.
+```
+string_rep_compare (string_rep "Bond, James Bond.") (string_rep "Bond, James Bond.")
+```
+```
+1
+```
+### string_rep_compare_string
+StdLib
+{: .label .label-green }
+string_hash_compare compares a string rep to a given string to see if they match. Returns True _(1)_ if they might match and False _(0)_ if they don't match.
+```
+(string_rep_compare_string (string_rep "Sean Connery") "Sean Connery")
+(string_rep_compare_string (string_rep "Sean Connery") "Pierce Brosnan")
+```
+```
+1
+0
+```
