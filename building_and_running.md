@@ -11,7 +11,6 @@ You should end up with something like this:
 
 <p><img src="/img/connery_docker.JPG"></p>
 
-
 # Linux
 In order to build Connery on Linux (this guide assumes Debian Buster) you will need to install the prerequisites, run the commands below:
 
