@@ -8,6 +8,8 @@ The fastest way to get up and running is to use Docker to build and run Connery.
 4. _docker run -it connerylang_
 
 You should end up with something like this:
+
+
 <img src="/img/connery_docker.JPG">
 
 
