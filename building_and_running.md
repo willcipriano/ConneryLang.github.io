@@ -9,8 +9,7 @@ The fastest way to get up and running is to use Docker to build and run Connery.
 
 You should end up with something like this:
 
-
-<img src="/img/connery_docker.JPG">
+<p><img src="/img/connery_docker.JPG"></p>
 
 
 # Linux
