@@ -10,7 +10,6 @@ The fastest way to get up and running is to use Docker to build and run Connery.
 You should end up with something like this:
 <img src="/img/connery_docker.jpg">
 
-In order to run Connery scripts you should exit the Connery REPL 
 
 # Linux
 In order to build Connery on Linux (this guide assumes Debian Buster) you will need to install the prerequisites, run the commands below:
