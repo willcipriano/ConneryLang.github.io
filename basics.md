@@ -4,7 +4,7 @@
 Builtin 
 {: .label .label-purple }
 Variable assignment, define a variable in the current scope.
-```
+_```_
 ; Strings
 def {VARIABLE_NAME} "example string"
 ; Numbers
