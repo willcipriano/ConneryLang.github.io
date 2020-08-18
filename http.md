@@ -19,9 +19,11 @@ http POST URL HEADERS BODY
 | BODY                | A string used as a body for post requests. (not required for GET)                             |
  
 http returns a list with three items.
+
 ```
 {STATUS_CODE {HEADERS} RESPONSE_BODY}
 ```
+
 | Variable                   | Purpose                                                                      |
 |:---------------------------|:-----------------------------------------------------------------------------|
 | STATUS_CODE                | A number representing the status code                                        |
