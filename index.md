@@ -1,8 +1,14 @@
 # Introduction
 <p align="center">
-  <img width="368" height="414.5" src="/img/ConneryLogo.jpg">
+  <img width="368" height="414.5" src="http://connerylang.org/img/ConneryLogo.jpg">
 </p>
 <p align="center">Connery is a experimental lisp-like interpreted programming language that is somewhat themed after veteran actor Sean Connery.</p>
+
+<p align="center"><a href="https://github.com/willcipriano/Connery">Connery on github</a></p>
+
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/willcipriano/connery?style=for-the-badge)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/willcipriano/Connery?style=for-the-badge)
+![Travis (.org)](https://img.shields.io/travis/willcipriano/Connery?style=for-the-badge)
 
 ## Connery has several of the features you have come to expect from a programming language
 You can assign variables
