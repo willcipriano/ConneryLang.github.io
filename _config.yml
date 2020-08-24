@@ -3,3 +3,6 @@ remote_theme: pmarsceill/just-the-docs
 color_scheme: "light"
 search_enabled: true
 logo: "/img/ConneryTextLogo.jpg"
+aux_links:
+  "Connery on GitHub":
+    - "https://github.com/willcipriano/Connery"
