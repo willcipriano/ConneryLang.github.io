@@ -1,3 +1,9 @@
+---
+layout: default
+title: Introduction
+nav_order: 1
+has_children: false
+---
 # Introduction
 <p align="center">
   <img width="368" height="414.5" src="http://connerylang.org/img/ConneryLogo.jpg">

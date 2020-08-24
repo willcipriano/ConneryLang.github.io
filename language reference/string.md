@@ -1,3 +1,9 @@
+---
+layout: default
+title: Strings
+parent: Language Reference 
+nav_order: 5
+---
 # Strings
 
 ### upper

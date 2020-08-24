@@ -1,3 +1,9 @@
+---
+layout: default
+title: File IO
+parent: Language Reference 
+nav_order: 6
+---
 # File IO
 
 ### file

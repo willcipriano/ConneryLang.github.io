@@ -1,3 +1,9 @@
+---
+layout: default
+title: Constants
+parent: Language Reference 
+nav_order: 8
+---
 # Constants
 
 Connery contains a number of constant values for the sake of convenience and to improve readability.

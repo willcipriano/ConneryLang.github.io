@@ -1,3 +1,9 @@
+---
+layout: default
+title: Syntax
+parent: Language Reference 
+nav_order: 2
+---
 # Syntax
 Connery is based on [Lispy](http://www.buildyourownlisp.com/) and like Lispy has two primary statement types, S-Expressions and Q-Expressions.
 

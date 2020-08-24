@@ -1,3 +1,9 @@
+---
+layout: default
+title: Types
+parent: Language Reference 
+nav_order: 3
+---
 # Data Types
 
 | Type     | Description                                                                                 |

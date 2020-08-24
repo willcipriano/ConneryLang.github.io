@@ -1,3 +1,9 @@
+---
+layout: default
+title: Math
+parent: Language Reference 
+nav_order: 4
+---
 # Mathematics
 
 ## Mathematical Operations

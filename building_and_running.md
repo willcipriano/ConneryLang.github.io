@@ -1,3 +1,9 @@
+---
+layout: default
+title: Building and Running
+nav_order: 3
+has_children: false
+---
 # Building and Running
 
 # Build a local Docker image

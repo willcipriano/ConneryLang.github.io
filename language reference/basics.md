@@ -1,3 +1,9 @@
+---
+layout: default
+title: Basic Functions
+parent: Language Reference 
+nav_order: 1
+---
 # Basic Functions
 
 ### def _(or =)_
