@@ -130,3 +130,16 @@ length returns the number of characters in a string, the number of digits in a n
 4
 4
 ```
+
+### flipargs
+flipargs flips the order of two arugments and returns a new function that can consume them in that order.
+```
+(fun {sub_function a b} {- a b})
+(flipargs sub_function 10 20)
+(sub_function 10 20)
+```
+```
+10
+-10
+```
+
