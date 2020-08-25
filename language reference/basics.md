@@ -132,6 +132,8 @@ length returns the number of characters in a string, the number of digits in a n
 ```
 
 ### flipargs
+StdLib
+{: .label .label-green }
 flipargs flips the order of two arugments and returns a new function that can consume them in that order.
 ```
 (fun {sub_function a b} {- a b})
