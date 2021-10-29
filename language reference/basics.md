@@ -95,6 +95,52 @@ list creates a list from all the consequent items provided to it.
 {"item 1" "item 2" 3}
 ```
 
+### grab
+Builtin 
+{: .label .label-purple }
+grab fetches a cval from a dictionary by a string key.
+```
+grab #"key"&"value"# "key"
+```
+```
+"value"
+```
+if the key doesn't exist, we return null instead.
+```
+grab #"key"&"value"# "not me"
+```
+```
+NULL
+```
+multiple values can be fetched by asking for more keys
+```
+grab #"key"&"value"# "not me" "key" "key"
+```
+```
+{NULL value value}
+```
+
+### stow
+Builtin 
+{: .label .label-purple }
+stow stores a cval by a string key into a dictionary
+```
+stow #"key"&"value"# "key2" 3.14
+```
+```
+key2 : 3.14
+key : "value"
+```
+multiple values can be stored at one, just like grab
+```
+stow #"key"&"value"# "key2" 3.14 "key3" "value3"
+```
+```
+key2 : 3.14
+key3 : "value3"
+key : "value"
+```
+
 ### type
 Builtin 
 {: .label .label-purple }

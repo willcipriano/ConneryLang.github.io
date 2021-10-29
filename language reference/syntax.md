@@ -34,6 +34,15 @@ A Q-Expression or _Quoted Expression_ is just like an S-Expression except it is 
 Hello, World!
 ```
 
+### Dictionaries
+Dictionaries are a data type backed by a hash map that allows you to store any other value and look it up by key. They can be created like so.
+```
+#"key"&"value",
+ "key 2"&2,
+ "key 3"&"another value",
+ "key 4"&"yet another value"#
+```
+
 ### Comments
 Comments can be prefixed with a semicolon and end at a newline.
 ```
