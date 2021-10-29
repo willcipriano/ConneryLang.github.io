@@ -131,7 +131,7 @@ stow #"key"&"value"# "key2" 3.14
 key2 : 3.14
 key : "value"
 ```
-multiple values can be stored at onccce, just like grab
+multiple values can be stored at once, just like grab
 ```
 stow #"key"&"value"# "key2" 3.14 "key3" "value3"
 ```
