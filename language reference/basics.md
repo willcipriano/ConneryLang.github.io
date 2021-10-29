@@ -177,6 +177,38 @@ length returns the number of characters in a string, the number of digits in a n
 4
 ```
 
+### inspect
+Builtin 
+{: .label .label-purple }
+inspect returns a dictionary that contains the details about any object and where it resides in memory.
+```
+inspect 0.07
+```
+```
+id : 160
+count : 0
+type : "Float"
+pointer : 93936106570464
+```
+Different types have other optional values.
+```
+inspect "I'm a string!"
+```
+```
+...
+string_pointer : 93936106490960
+...
+```
+Optional additional dictionaries will appear, depending on the context.
+```
+grab (inspect "I'm also a string") "env"
+```
+```
+env_pointer : 93936106480224
+env_items : 160
+env_size : 700
+```
+
 ### flipargs
 StdLib
 {: .label .label-green }
@@ -190,4 +222,3 @@ flipargs flips the order of two arugments and returns a new function that can co
 10
 -10
 ```
-
