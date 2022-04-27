@@ -10,13 +10,9 @@ nav_order: 7
 ### http
 Builtin 
 {: .label .label-purple }
-Connery has native HTTP support via the http builtin. This can be used to make get and post requests via http or https.
+Connery has native HTTP support via the http builtin. This can be used to make requests via http or https.
 ```
-;get request
-http GET URL HEADERS
-
-;post request
-http POST URL HEADERS BODY
+http URL 
 ``` 
 
 | Variable            | Purpose                                                                                       |
@@ -25,54 +21,25 @@ http POST URL HEADERS BODY
 | HEADERS             | A list of any request headers you would like to use to make the request in "KEY:VALUE" format.|
 | BODY                | A string used as a body for post requests. (not required for GET)                             |
  
-http returns a list with three items.
-
+http returns a dictionary containing many items that describe the request and provides the context.
 ```
-{STATUS_CODE {HEADERS} RESPONSE_BODY}
+connery> http "google.com"
+response code : 301
+headers : Dictionary
+body : "<HTML><HEAD><meta http-equiv="content-type" ...
+size : Dictionary
+speed : Dictionary
+time : Dictionary
+url : "google.com"
 ```
-
-| Variable                   | Purpose                                                                      |
-|:---------------------------|:-----------------------------------------------------------------------------|
-| STATUS_CODE                | A number representing the status code                                        |
-| HEADERS                    | A list containing each header sent by the server. In "KEY: VALUE" format.    |
-| RESPONSE_BODY              | A string that contains the body of the response.                             |
-
-### http request examples
-
-An example get request to google.com with the foo header set to bar.
+As you can see size, speed and time are themselves dictionaries. They contain metrics about the request.
 ```
-http GET "google.com" (list "foo:bar")
-```
-
-An example post to google.com with no headers.
-```
-http POST "google.com" None "this is the post body"
-```
-
-## Helper functions
-
-### http_get
-StdLib
-{: .label .label-green }
-The http_get helper function only requires a url to make a request.
-```
-http_get "connerylang.org"
-```
-### http_post
-StdLib
-{: .label .label-green }
-The http_post helper function takes a url and a post body.
-```
-http_post "connerylang.org" "Bond, James Bond."
-```
-
-### http_status_code_text
-StdLib
-{: .label .label-green }
-The http_status_code_text function takes a response and returns a textual representation of the status code.
-```
-http_status_code_text (http_get "connerylang.org")
-```
-```
-"OK"
+connery> grab (http_get "google.com") "time"
+total : 0.103757
+start : 0.103726
+dns : 0.00437
+connect : 0.018038
+redirect : 0
+ssl : 0
+prestart : 0.018189
 ```
